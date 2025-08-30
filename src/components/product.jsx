@@ -1,5 +1,5 @@
 import { latestTranslations } from "../translations/latest"
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router"
 import footer from '../footer.jpg'
 export default function Product() {
     const location = useLocation();

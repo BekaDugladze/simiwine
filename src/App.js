@@ -3,7 +3,7 @@ import { Header } from './components/header';
 import Product from './components/product';
 import { useEffect } from 'react';
 import Footer from './components/footer';
-import { useLocation, BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"; // Changed this line
+import { useLocation, BrowserRouter as Router, Route, Routes, Navigate } from "react-router"; // Changed this line
 import { Suspense, lazy } from 'react';
 import logo from './logo.png'
 
