@@ -46,5 +46,8 @@
   },
   "devDependencies": {
     "postcss-preset-env": "^10.2.4"
+  },
+  "engines": {
+    "node": "18"
   }
 }
