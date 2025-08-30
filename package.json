@@ -21,11 +21,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "craco start",
+  "build": "craco build",
+  "test": "craco test",
+  "eject": "react-scripts eject"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "postcss-preset-env": "^10.2.4",
@@ -52,7 +53,9 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
-    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
     "testEnvironmentOptions": {
       "url": "http://localhost"
     }
