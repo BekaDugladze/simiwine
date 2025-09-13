@@ -56,7 +56,7 @@ export default function Latest() {
 
   return (
     <section 
-      className="flex flex-col w-full items-center justify-center py-20 text-white overflow-hidden"
+      className="flex flex-col w-full items-center justify-between py-5 text-white overflow-hidden"
       style={{
         background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${gpt2}) center/cover no-repeat`,
         minHeight: '100vh'
@@ -82,11 +82,9 @@ export default function Latest() {
           <img 
             src={currentProduct.src} 
             alt={currentProduct.title} 
-            width={100}
-            height={100}
             className='rounded-xl shadow-lg transition-opacity duration-500 animate__animated animate__fadeInLeft'
             style={{
-              maxHeight: '500px',
+              maxHeight: '400px',
               maxWidth: '300px',
             }}
           />
@@ -96,7 +94,7 @@ export default function Latest() {
             <h3 className='marcellus-regular text-2xl font-semibold animate__animated animate__fadeInDown'>
               {currentProduct.title}
             </h3>
-            <p className='marcellus-regular text-center max-w-md animate__animated animate__fadeInRight'>
+            <p className='marcellus-regular md:text-lg text-md text-center max-w-md animate__animated animate__fadeInRight'>
               {currentProduct.description}
             </p>
             <Link 
