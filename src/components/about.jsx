@@ -27,7 +27,7 @@ const About = () => {
                 <div className="md:p-8 p-3 animate__bounceInLeft animate__animated ">
                     <p className="text-justify ">{t.description}</p>
                     <p className="text-left mt-4">{t.phone} 
-                        <a className="text-red-800" href="tel:+995123456789">+995 123 456 789</a>
+                        <a className="text-red-800" href="tel:+995592292828">+995 592 292 828</a>
                     </p>
                     <p className="text-left mt-2">{t.email} 
                         <a className="text-red-800" href="mailto:info@simiwine.com">info@simiwine.com</a>

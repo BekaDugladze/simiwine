@@ -6,6 +6,7 @@ import { useLocation } from 'react-router';
 import About from '../about';
 import footerimg from '../../footer.jpg';
 import Latest from './latest';
+import webvid from '../../webvid.mp4';
 
 const Home = () => {
     const location = useLocation();
@@ -117,7 +118,6 @@ const Home = () => {
   return (
     <>
         <div style={containerStyle}>
-        {isMobile ? (
         <>{/* Fallback background image */}
         {(!videoLoaded || videoError) && (
             <div style={fallbackStyle} aria-hidden="true" />
@@ -136,7 +136,7 @@ const Home = () => {
             onError={() => setVideoError(true)}
             onCanPlay={() => setVideoLoaded(true)}
             >
-            <source src={video} type="video/mp4" />
+            <source src={isMobile ? video : webvid} type="video/mp4" />
             {/* Fallback message */}
             Your browser doesn't support video playback.
             </video>
@@ -155,9 +155,6 @@ const Home = () => {
             </div>
         )}
         </>
-        ) : (
-        <div className={`${animationClass}`} style={fallbackStyle} aria-hidden="true" />
-        )}
 
         {/* Main content */}
         <div style={{ ...contentStyle, overflow: 'hidden' }}>

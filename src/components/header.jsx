@@ -67,6 +67,7 @@ export function Header(){
                 <button 
                     className='md:hidden visible mr-4'
                     onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label={menuOpen ? 'Close menu' : 'Open menu'}
                 >
                     {menuOpen ? (
                         <FontAwesomeIcon icon={faClose}  alt='close'/>
