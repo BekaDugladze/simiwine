@@ -82,6 +82,8 @@ export default function Latest() {
           <img 
             src={currentProduct.src} 
             alt={currentProduct.title} 
+            height={400}
+            width={100}
             className='rounded-xl shadow-lg transition-opacity duration-500 animate__animated animate__fadeInLeft'
             style={{
               maxHeight: '400px',
