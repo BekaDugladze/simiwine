@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import gpt2 from '../../gpt2.png';
+import gpt2 from '../../fbCover.jpg';
 import { Link } from 'react-router';
 import { useLocation } from 'react-router';
 import { latestTranslations as translations } from '../../translations/latest';
@@ -86,7 +86,7 @@ export default function Latest() {
             height={100}
             className='rounded-xl shadow-lg transition-opacity duration-500 animate__animated animate__fadeInLeft'
             style={{
-              maxHeight: '300px',
+              maxHeight: '500px',
               maxWidth: '300px',
             }}
           />
