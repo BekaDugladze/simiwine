@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import gpt2 from '../../fbCover.jpg';
+import gpt2 from '../../back2.jpg';
 import { Link } from 'react-router';
 import { useLocation } from 'react-router';
 import { latestTranslations as translations } from '../../translations/latest';
