@@ -78,7 +78,7 @@ export default function Latest() {
         {/* Main Content */}
         <div className="flex md:flex-row flex-col items-center m-5 w-3/4 justify-center space-y-5 md:space-y-0 md:space-x-10" 
             key={animationKey} // key to reset animation
-          >
+          style={{height: '70vh'}}>
           <img 
             src={currentProduct.src} 
             alt={currentProduct.title} 
