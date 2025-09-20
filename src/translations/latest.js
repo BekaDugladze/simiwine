@@ -1,4 +1,4 @@
-import saperavi from '../saperavi.jpg.png';
+import saperavi from '../saperavi.png';
 import chkhaveri from '../chkhaveri.png';
 import khikhvi from '../khikhvi.png'
 import kindzmarauli from '../kindzmarauli.png';
